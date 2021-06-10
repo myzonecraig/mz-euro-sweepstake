@@ -12,7 +12,7 @@
 <script>
 import FootballTeams from './components/FootballTeams.vue';
 import TeamData from './src/data/data.json';
-import UserData from './src/data/users.json';
+import UserData from './src/user.json';
 
 export default {
   name: 'App',
