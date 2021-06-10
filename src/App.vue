@@ -1,17 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>MZ Euro Sweepstakes</h1>
+
+    <div v-for="(value, key, index) in teams" v-bind:key="index">
+      <FootballTeams :teamData="{value}" />
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FootballTeams from './components/FootballTeams.vue';
+import TeamData from './src/data/data.json';
+import UserData from './src/data/users.json';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FootballTeams
+  },
+  computed: {
+    teams() {
+      const newTeamData =  TeamData.standings.map((team) => {
+        for(var i = 0; i < team.table.length; i++)
+        {
+          //console.log(team.table[i].team.id + " - " + team.table[i].team.name); // Reveal this to find out names and country
+          const teamId = team.table[i].team.id;
+          team.table[i].team.user = UserData.filter((userTeam) => userTeam.teamId == teamId).map((userTeam) => userTeam.employeeName)[0]; // return just the user
+        }
+        return team;
+      })
+      return newTeamData;
+    }
   }
 }
 </script>
