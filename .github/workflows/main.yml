@@ -1,0 +1,33 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Refresh Feed
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+jobs:
+  refresh-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          
+      - name: Fetch API Data
+        uses: JamesIves/fetch-api-data-action@releases/v1
+        with:
+          ENDPOINT: http://api.football-data.org/v2/competitions/2018/standings
+          CONFIGURATION: '{ "method": "GET", "headers": {"X-Auth-Token": "cee23ffefd804286a4468090717e5ed0"} }'
+          SAVE_NAME: data
+          
+      - name: Save the data 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: main # Pushes the updates to the master branch.
+          FOLDER: fetch-api-data-action # The location of the data.json file saved by the Fetch API Data action.
+          TARGET_FOLDER: src/data
