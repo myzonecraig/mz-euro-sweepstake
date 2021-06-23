@@ -3,11 +3,11 @@
     <h3>{{teamData.value.group | formatString}}</h3>
     
     <div class="teams-row">
-        <div v-for="(value, key, index) in teamData.value.table" v-bind:key="index" class="teams-row-item">
+        <div v-for="(value, key, index) in teamData.value.table" v-bind:key="index" class="teams-row-item" v-bind:style="[ value.team.user.out ? { opacity:0.2 } : null ]">
         <img :src="value.team.crestUrl" width="85px" /><br />
         
         <h4>{{value.team.name}}</h4>
-        <small>{{ value.team.user }}</small>
+        <small>{{ value.team.user.employeeName }}</small>
         </div>
     </div>
 

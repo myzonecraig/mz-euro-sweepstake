@@ -1,98 +1,122 @@
 [
     {
         "teamId": 784,
-        "employeeName": "Carla"
+        "employeeName": "Carla",
+        "out": false
     },
     {
         "teamId": 788,
-        "employeeName": "Rachel"
+        "employeeName": "Rachel",
+        "out": false
     },
     {
         "teamId": 803,
-        "employeeName": "Craig T"
+        "employeeName": "Craig T",
+        "out": true
     },
     {
         "teamId": 833,
-        "employeeName": "Billy"
+        "employeeName": "Billy",
+        "out": false
     },
     {
         "teamId": 805,
-        "employeeName": "Jose"
+        "employeeName": "Jose",
+        "out": false
     },
     {
         "teamId": 782,
-        "employeeName": "Monksey"
+        "employeeName": "Monksey",
+        "out": false
     },
     {
         "teamId": 1976,
-        "employeeName": "Tom"
+        "employeeName": "Tom",
+        "out": false
     },
     {
         "teamId": 808,
-        "employeeName": "Allan"
+        "employeeName": "Allan",
+        "out": true
     },
     {
         "teamId": 816,
-        "employeeName": "John"
+        "employeeName": "John",
+        "out": false
     },
     {
         "teamId": 8601,
-        "employeeName": "Dec"
+        "employeeName": "Dec",
+        "out": false
     },
     {
         "teamId": 1977,
-        "employeeName": "Gaz Bee"
+        "employeeName": "Gaz Bee",
+        "out": true
     },
     {
         "teamId": 790,
-        "employeeName": "Ben HW"
+        "employeeName": "Ben HW",
+        "out": false
     },
     {
         "teamId": 799,
-        "employeeName": "Andy Williams"
+        "employeeName": "Andy Williams",
+        "out": false
     },
     {
         "teamId": 798,
-        "employeeName": "Dan B"
+        "employeeName": "Dan B",
+        "out": false
     },
     {
         "teamId": 770,
-        "employeeName": "Neil"
+        "employeeName": "Neil",
+        "out": false
     },
     {
         "teamId": 8873,
-        "employeeName": "Dave"
+        "employeeName": "Dave",
+        "out": false
     },
     {
         "teamId": 794,
-        "employeeName": "Ania"
+        "employeeName": "Ania",
+        "out": false
     },
     {
         "teamId": 768,
-        "employeeName": "G Wiz"
+        "employeeName": "G Wiz",
+        "out": false
     },
     {
         "teamId": 760,
-        "employeeName": "James"
+        "employeeName": "James",
+        "out": false
     },
     {
         "teamId": 792,
-        "employeeName": "Jemma"
+        "employeeName": "Jemma",
+        "out": false
     },
     {
         "teamId": 773,
-        "employeeName": "Soph"
+        "employeeName": "Soph",
+        "out": false
     },
     {
         "teamId": 759,
-        "employeeName": "Dazza"
+        "employeeName": "Dazza",
+        "out": false
     },
     {
         "teamId": 827,
-        "employeeName": "Craig W"
+        "employeeName": "Craig W",
+        "out": false
     },
     {
         "teamId": 765,
-        "employeeName": "Stalks"
+        "employeeName": "Stalks",
+        "out": false
     }
 ]

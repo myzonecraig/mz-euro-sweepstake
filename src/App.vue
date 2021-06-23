@@ -26,7 +26,7 @@ export default {
         {
           //console.log(team.table[i].team.id + " - " + team.table[i].team.name); // Reveal this to find out names and country
           const teamId = team.table[i].team.id;
-          team.table[i].team.user = UserData.filter((userTeam) => userTeam.teamId == teamId).map((userTeam) => userTeam.employeeName)[0]; // return just the user
+          team.table[i].team.user = UserData.filter((userTeam) => userTeam.teamId == teamId).map((userTeam) => userTeam)[0]; // return just the user
         }
         return team;
       })
