@@ -32,7 +32,7 @@
     {
         "teamId": 1976,
         "employeeName": "Tom",
-        "out": false
+        "out": true
     },
     {
         "teamId": 808,
@@ -77,17 +77,17 @@
     {
         "teamId": 8873,
         "employeeName": "Dave",
-        "out": false
+        "out": true
     },
     {
         "teamId": 794,
         "employeeName": "Ania",
-        "out": false
+        "out": true
     },
     {
         "teamId": 768,
         "employeeName": "G Wiz",
-        "out": false
+        "out": true
     },
     {
         "teamId": 760,
@@ -112,7 +112,7 @@
     {
         "teamId": 827,
         "employeeName": "Craig W",
-        "out": false
+        "out": true
     },
     {
         "teamId": 765,
