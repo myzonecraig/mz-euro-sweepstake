@@ -17,7 +17,7 @@
     {
         "teamId": 833,
         "employeeName": "Billy",
-        "out": false
+        "out": true
     },
     {
         "teamId": 805,
@@ -42,12 +42,12 @@
     {
         "teamId": 816,
         "employeeName": "John",
-        "out": false
+        "out": true
     },
     {
         "teamId": 8601,
         "employeeName": "Dec",
-        "out": false
+        "out": true
     },
     {
         "teamId": 1977,
@@ -117,6 +117,6 @@
     {
         "teamId": 765,
         "employeeName": "Stalks",
-        "out": false
+        "out": true
     }
 ]
